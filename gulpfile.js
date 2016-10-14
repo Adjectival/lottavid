@@ -7,8 +7,8 @@ var utilities = require ("gulp-util");
 var del = require ("del");
 var browserSync = require ("browser-sync").create();
 var jshint = require ("gulp-jshint");
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+var sass = require("gulp-sass");
+var sourcemaps = require("gulp-sourcemaps");
 var lib = require ("bower-files") ({
   "overrides": {
     "bootstrap": {
@@ -52,7 +52,7 @@ gulp.task ("build", ["clean"], function() {
     gulp.start ("jsBrowserify");
   }
   gulp.start ("bower");
-  gulp.start ("cssBuild");
+  // gulp.start ("cssBuild");
 });
 
 gulp.task ("bowerJS", function() {
