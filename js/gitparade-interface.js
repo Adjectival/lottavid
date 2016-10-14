@@ -1,7 +1,12 @@
-var GitShow = require("./../js/gitparade.js").gitParadeModule;
+var GitParade = require("./../js/gitparade.js").gitParadeModule;
 
 // form input
 $(document).ready(function() {
-  event.preventDefault();
-
+  var foundGitUser = new GitParade();
+  $("#lookupBTN").click(function(event){
+    event.preventDefault();
+    var userName = $("#inputName").val();
+    $("#output").empty();
+    foundGitUser.userFind(userName);
+  });
 });
