@@ -1,7 +1,7 @@
 // make API request
 var apiKey = require("./../.env").apiKey;
 
-function GitShow(){
+function gitParade(){
 }
 
-exports.gitShowModule = GitShow;
+exports.gitParadeModule = GitShow;
