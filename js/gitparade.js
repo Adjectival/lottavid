@@ -11,9 +11,11 @@ GitParade.prototype.userFind = function(userName) {
     $('#output2').text(userResult.login);
     $('#output3').text(userResult.bio);
     $('#output4').append("<a href="+followersURL+">"+userResult.followers+"</a>");
-    $('#output5').text(userResult.public_repos+"</a>");
+    $('#output5').text(userResult.public_repos);
       $.get('https://api.github.com/users/' +userName+ '/repos?&per_page=100&access_token=' + apiKey).then(function(reposResult){
-        //for loop {}
+        for (var i=0; 1<100; i++){
+          $('#repoList').append(reposResult[i].name+ "<br>");
+        }
       }).fail(function(error){
         console.log(error.responseJSON.message);
       });
