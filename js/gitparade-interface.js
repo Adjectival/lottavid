@@ -6,7 +6,11 @@ $(document).ready(function() {
   $("#lookupBTN").click(function(event){
     event.preventDefault();
     var userName = $("#inputName").val();
-    $("#output").empty();
+    $("#output1").empty();
+    $("#output2").empty();
+    $("#output3").empty();
+    $("#output4").empty();
+    $("#output5").empty();
     foundGitUser.userFind(userName);
   });
 });
