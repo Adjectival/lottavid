@@ -3,6 +3,10 @@ h2 {
   font-size: 28px;
 }
 
-.row {  
+.row {
   text-align: center;
+}
+
+.submit {
+  background-color: hsla(214%, 50%, 50%, 1);
 }

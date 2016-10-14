@@ -11,6 +11,7 @@ $(document).ready(function() {
     $("#output3").empty();
     $("#output4").empty();
     $("#output5").empty();
+    $("#repoList").empty();
     foundGitUser.userFind(userName);
   });
 });
