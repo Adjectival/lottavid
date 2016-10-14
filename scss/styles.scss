@@ -1,0 +1,47 @@
+/* Coolors Exported Palette - coolors.co/c9510c-7cea9c-181f1c-4078c0-46494c
+# adapted from OFFICIAL GITHUB BRAND COLORS; green black and spacegray new */
+
+$orange: hsla(22%, 89%, 42%, 1);
+$palegreen: hsla(137%, 72%, 70%, 1);
+$blackish: hsla(154%, 13%, 11%, 1);
+$blue: hsla(214%, 50%, 50%, 1);
+
+$spacegray: hsla(210%, 4%, 29%, 1);
+$lightgray: rgba(153, 153, 153, 1);
+$mediumgray: rgba(115, 115, 115, 1);
+$darkgray: rgba(51, 51, 51, 1);
+
+
+/* # OFFICIAL GITHUB BRAND COLORS
+--------------------------------------------------------------------
+Official Github Brand Colors (August 20, 2015) from the
+GitHub internal CSS framework (Primer) version 2.3.3
+Source URI: http://primercss.io/colors/
+ 1.a = Github Branding Color Swatches
+-------------------------------------------------------------------- */
+ .swatch-github-blue {
+	background-color:#4078c0;
+}
+.swatch-github-green {
+	background-color:#6cc644;
+}
+.swatch-github-red {
+	background-color:#bd2c00;
+}
+.swatch-github-orange {
+	background-color:#c9510c;
+}
+.swatch-github-purple {
+	background-color:#6e5494;
+}
+/* 1.b = Github Branding Grayscale Swatches
+-------------------------------------------------------------------- */
+ .swatch-github-gray-light {
+	background-color:#999;
+}
+.swatch-github-gray {
+	background-color:#767676;
+}
+.swatch-github-gray-dark {
+	background-color:#333;
+}

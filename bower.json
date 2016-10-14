@@ -1,0 +1,24 @@
+{
+  "name": "gitshow",
+  "description": "allows user to see Github member's recent workflow (repos) with descriptions; only public work",
+  "main": "gulpfile.js",
+  "authors": [
+    "Alexander Jacks"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "github",
+    "repo",
+    "repository",
+    "API",
+    "epicodus"
+  ],
+  "homepage": "https://github.com/Adjectival/gitparade",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
