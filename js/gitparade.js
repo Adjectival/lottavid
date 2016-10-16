@@ -14,7 +14,8 @@ GitParade.prototype.userFind = function(userName) {
     $('#output5').text(userResult.public_repos);
       $.get('https://api.github.com/users/' +userName+ '/repos?&per_page=100&access_token=' + apiKey).then(function(reposResult){
         for (var i=0; 1<100; i++){
-          $('#repoList').append(reposResult[i].name+ "<br>");
+          $('#repoList').append("<h4>" +reposResult[i].name+ "</h4>");
+          $('#repoList').append("<h5>" +reposResult[i].description+ "</h5>");
         }
       }).fail(function(error){
         console.log(error.responseJSON.message);
