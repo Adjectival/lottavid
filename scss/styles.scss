@@ -11,6 +11,29 @@ $lightgray: rgba(153, 153, 153, 1);
 $mediumgray: rgba(115, 115, 115, 1);
 $darkgray: rgba(51, 51, 51, 1);
 
+body {
+  background-color: $mediumgray;
+}
+
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: $blackish;
+}
+
+.row {
+  text-align: center;
+}
+
+.well {
+  background-color: $lightgray;
+}
+
+.submit {
+  background-color: $palegreen;
+}
+
 
 /* # OFFICIAL GITHUB BRAND COLORS
 --------------------------------------------------------------------
