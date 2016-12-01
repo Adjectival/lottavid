@@ -1,11 +1,3 @@
-/* Coolors Exported Palette - coolors.co/c9510c-7cea9c-181f1c-4078c0-46494c
-# adapted from OFFICIAL GITHUB BRAND COLORS; green black and spacegray new */
-
-$orange: hsla(22%, 89%, 42%, 1);
-$palegreen: hsla(137%, 72%, 70%, 1);
-$blackish: hsla(154%, 13%, 11%, 1);
-$blue: hsla(214%, 50%, 50%, 1);
-
 $spacegray: hsla(210%, 4%, 29%, 1);
 $lightgray: rgba(153, 153, 153, 1);
 $mediumgray: rgba(115, 115, 115, 1);
@@ -15,11 +7,10 @@ body {
   background-color: $mediumgray;
 }
 
-
-h2 {
+h1, h2 {
   text-align: center;
   font-size: 28px;
-  color: $blackish;
+  color: $darkgray;
 }
 
 .row {
@@ -30,41 +21,190 @@ h2 {
   background-color: $lightgray;
 }
 
-.submit {
-  background-color: $palegreen;
+button {
+  background-color: $darkgray;
+}
+
+// so here's the gallery setup
+/* For testing only  - Leroi Dejesa */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed firebrick;
+}
+
+.columns, .fixed {
+  min-height: 100px;
+}
+/* End for testing */
+
+/*
+dark color: #0e3b43
+red color: #bb0a21
+yellow green: #f7b32b
+*/
+
+
+/* D3 code for fun
+
+
+*/
+
+
+body {
+  font-family: 'Luminari';
+}
+
+h1 {color: black;}
+h2 {color: black;}
+h3 {color: black;}
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+}
+
+.box {
+  width: 90vw;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: #334;
+  width: 100%;
+  font: #eee;
+}
+
+.flexed {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexed li {
+  margin: 1em;
+  font-size: 1.3em;
+  text-align: center;
+  list-style-type: none;
+}
+
+#boxb {
+  background-color: #0e3b43;
+  margin-top: 95px;
+  width: 95%;
+
+}
+#box1, #box3, #box5 {
+  background-color: #bb0a21;
+}
+#box2 {
+  background-color: #f7b32b;
+}
+#box4 {
+  background-color: #f7b32b;
+}
+// #box3 {
+//   background-color: #bb0a21;
+// }
+// #box5 {
+//   background-color: #bb0a21;
+// }
+#box6 {
+  background-color: #f7b32b;
+}
+#boxf {
+  background-color: #0e3b43;
 }
 
 
-/* # OFFICIAL GITHUB BRAND COLORS
---------------------------------------------------------------------
-Official Github Brand Colors (August 20, 2015) from the
-GitHub internal CSS framework (Primer) version 2.3.3
-Source URI: http://primercss.io/colors/
- 1.a = Github Branding Color Swatches
--------------------------------------------------------------------- */
- .swatch-github-blue {
-	background-color:#4078c0;
+/* D3 test
+.chart {
+  font: 10px sans-serif;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: steelblue;
+  margin-top: 200px;
+}*/
+
+/*Universal Selectors****************/
+/*Class Selectors********************/
+/*Id Selectors***********************/
+
+/*Media Queries**********************/
+/*mobile (first)*/
+@media screen and (max-width: 600px){
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+  #boxb {
+    margin-top: 212px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flexed li {
+    margin: .5em;
+    font-size: 1em;
+  }
+  .box {
+    height: 150px;
+  }
 }
-.swatch-github-green {
-	background-color:#6cc644;
+/*tablet*/
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #boxb {
+    margin-top: 112px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*box numbering backwards, beware*/
+  .box:nth-child(even) {
+    width: 45vw;
+    float: left;
+    margin-left: 4vw;
+  }
+  .box:nth-child(odd) {
+    width: 45vw;
+    float: right;
+    margin-right: 4vw;
+  }
 }
-.swatch-github-red {
-	background-color:#bd2c00;
-}
-.swatch-github-orange {
-	background-color:#c9510c;
-}
-.swatch-github-purple {
-	background-color:#6e5494;
-}
-/* 1.b = Github Branding Grayscale Swatches
--------------------------------------------------------------------- */
- .swatch-github-gray-light {
-	background-color:#999;
-}
-.swatch-github-gray {
-	background-color:#767676;
-}
-.swatch-github-gray-dark {
-	background-color:#333;
+/*desktop*/
+@media screen and (min-width: 801px){
+  #boxb {
+    margin-top: 112px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+  }
+
+  #box1, #box4 {
+    margin-left: 10vw;
+  }
+
+  .box {
+    height: 250px;
+  }
+
+  .box:nth-child(n+3) {
+    width: 25vw;
+    float: left;
+    margin: 1vw;
+  }
+
+  .box:nth-child(-n+3) {
+    width: 25vw;
+    float: left;
+    margin: 1vw;
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "gitshow",
-  "description": "allows user to see Github member's recent workflow (repos) with descriptions; only public work",
+  "name": "lottavid",
+  "description": "demo practice for covervid plugin",
   "main": "gulpfile.js",
   "authors": [
     "Alexander Jacks"
@@ -13,7 +13,7 @@
     "API",
     "epicodus"
   ],
-  "homepage": "https://github.com/Adjectival/gitparade",
+  "homepage": "https://github.com/Adjectival/lottavid",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -23,6 +23,7 @@
   ],
   "dependencies": {
     "jquery": "^3.1.1",
+    "covervid": "2b462f9237",
     "bootstrap": "^3.3.7",
     "moment": "^2.15.1"
   }
