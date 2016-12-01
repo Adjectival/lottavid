@@ -4,7 +4,7 @@
 ### By _Alexander Jacks_
 
 ### Description
-Responsive grid of free videos from Vimeo, for templating.
+Gallery of videos template using covervid JQuery plugin: Node.js serving basic frontend site
 
 ## Setup
 1. Clone/download this project directory
