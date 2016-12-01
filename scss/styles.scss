@@ -2,7 +2,7 @@
 
 *:not(body):not(html) {
   box-sizing:border-box;
-  border:1px groove firebrick;
+  // border: 1px groove firebrick;
 }
 
 .columns, .fixed {
@@ -25,41 +25,27 @@ body {
   background-color: $lightgray;
 }
 
-#beefy {
-  font-size: 100px;
+video {
+  margin-top: 2vh;
+  max-width: 31vw;
 }
 
-h1, h2 {
-  text-align: center;
-  // vertical-align: middle;
-  font-size: 28px;
-  color: $darkgray;
+#beefy {
+  font-size: 100px;
 }
 
 .row {
   text-align: center;
 }
 
-.well {
-  background-color: $lightgray;
-}
-
 button {
   background-color: $darkgray;
 }
-
-// so here's the gallery setup
-
-
-
 body {
   font-family: 'Luminari';
 }
 
-h1 {color: black;}
-h2 {color: black;}
-h3 {color: black;}
-
+// so here's the gallery setup
 
 .container {
   width: 100vw;
@@ -76,11 +62,9 @@ h3 {color: black;}
 }
 
 .covervid-wrapper {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    padding: 1%;
 }
 
 .fixed {
@@ -106,46 +90,32 @@ h3 {color: black;}
 
 #boxb {
   background-color: $spacegray;
-  margin-top: 95px;
-  width: 95%;
-
+  width: 95vw;
+  margin-top: 0;
+  h1 {
+    color: firebrick;
+    text-align: center;
+    padding-top: 3vh;
+  }
 }
 #box1, #box3, #box5 {
   background-color: #bb0a21;
 }
-#box2 {
-  background-color: #f7b32b;
-}
-#box4 {
-  background-color: #f7b32b;
-}
-// #box3 {
-//   background-color: #bb0a21;
-// }
-// #box5 {
-//   background-color: #bb0a21;
-// }
-#box6 {
+#box2, #box4, #box6 {
   background-color: #f7b32b;
 }
 #boxf {
   background-color: #0e3b43;
 }
 
-
-/* D3 test
-.chart {
-  font: 10px sans-serif;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  color: steelblue;
-  margin-top: 200px;
-}*/
-
-/*Universal Selectors****************/
-/*Class Selectors********************/
-/*Id Selectors***********************/
+/*gradients*/
+#gradient {
+  background: cornsilk; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(DarkOrange, orange, khaki, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(DarkOrange, orange, khaki, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(DarkOrange, orange, khaki, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(DarkOrange, orange, khaki, white); /* Standard syntax */
+}
 
 /*Media Queries**********************/
 /*mobile (first)*/
@@ -155,11 +125,6 @@ h3 {color: black;}
     flex-direction: column;
     justify-content: center;
     padding: 0;
-  }
-  #boxb {
-    margin-top: 212px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .flexed li {
     margin: .5em;
@@ -171,11 +136,6 @@ h3 {color: black;}
 }
 /*tablet*/
 @media screen and (min-width: 601px) and (max-width: 800px) {
-  #boxb {
-    margin-top: 112px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   /*box numbering backwards, beware*/
   .box:nth-child(even) {
     width: 45vw;
@@ -191,10 +151,7 @@ h3 {color: black;}
 /*desktop*/
 @media screen and (min-width: 801px){
   #boxb {
-    margin-top: 112px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 150px;
+    height: 10vh;
   }
 
   #box1, #box4 {
