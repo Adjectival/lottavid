@@ -1,28 +1,124 @@
-$blue: #4077bf;
-$orange: #ca520c;
-$palegreen: #7bea9b;
-$blackish: hsla(154%, 13%, 11%, 1);
+/* For testing only  - Leroi Dejesa */
+*:not(body):not(html) {
+  box-sizing: border-box; }
 
-$spacegray: hsla(210%, 4%, 29%, 1);
-$lightgray: rgba(153, 153, 153, 1);
-$mediumgray: rgba(115, 115, 115, 1);
-$darkgray: rgba(51, 51, 51, 1);
+.columns, .fixed {
+  min-height: 100px; }
 
-body {
-  background-color: $blue;
-}
+/* End for testing */
+/*
+dark color: #0e3b43
+red color: #bb0a21
+yellow green: #f7b32b
+*/
+video {
+  margin-top: 2vh;
+  max-width: 31vw; }
 
-
-h2 {
-  text-align: center;
-  font-size: 28px;
-  color: $blackish;
-}
+#beefy {
+  font-size: 100px;
+  text-shadow: 4px 3px 0px DarkOrange, 9px 8px 0px rgba(0, 0, 0, 0.15); }
 
 .row {
-  text-align: center;
-}
+  text-align: center; }
 
-.submit {
-  background-color: hsla(214%, 50%, 50%, 1);
-}
+body {
+  font-family: 'Luminari'; }
+  body div {
+    background-color: DarkOrange;
+    margin-left: 1vw; }
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px; }
+
+.covervid-wrapper {
+  width: 100vw;
+  height: 100vh; }
+
+#boxb {
+  background-color: #474a4d;
+  width: 100vw;
+  margin-top: 0px;
+  text-align: center; }
+  #boxb h1 {
+    color: firebrick;
+    text-align: center;
+    padding-top: 3vh;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
+
+/*gradients*/
+.gradient {
+  background: cornsilk;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine);
+  /* Standard syntax */ }
+
+.gradient2 {
+  background: cornsilk;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(firebrick, DarkOrange, orange, khaki);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(firebrick, DarkOrange, orange, khaki);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(firebrick, DarkOrange, orange, khaki);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(firebrick, DarkOrange, orange, khaki);
+  /* Standard syntax */ }
+
+/*Media Queries**********************/
+/*mobile (first)*/
+@media screen and (max-width: 600px) {
+  .flexed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0; }
+
+  .flexed li {
+    margin: .5em;
+    font-size: 1em; }
+
+  .box {
+    height: 150px; } }
+/*tablet*/
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  /*box numbering backwards, beware*/
+  .box:nth-child(even) {
+    width: 45vw;
+    float: left;
+    margin-left: 4vw; }
+
+  .box:nth-child(odd) {
+    width: 45vw;
+    float: right;
+    margin-right: 4vw; } }
+/*desktop*/
+@media screen and (min-width: 801px) {
+  #boxb {
+    height: 10vh; }
+
+  #box1, #box4 {
+    margin-left: 10vw; }
+
+  .box {
+    height: 250px; }
+
+  .box:nth-child(n+3) {
+    width: 25vw;
+    float: left;
+    margin: 1vw; }
+
+  .box:nth-child(-n+3) {
+    width: 25vw;
+    float: left;
+    margin: 1vw; } }
+
+/*# sourceMappingURL=styles.css.map */

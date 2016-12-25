@@ -47,20 +47,20 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  padding: 0;
+  padding: 0px;
 }
 
 .covervid-wrapper {
     width: 100vw;
     height: 100vh;
-    padding: 1%;
+    // padding: 1%;
 }
 
 
 #boxb {
   background-color: $spacegray;
-  width: 95vw;
-  margin-top: 0;
+  width: 100vw;
+  margin-top: 0px;
   text-align: center;
   h1 {
     color: firebrick;
@@ -76,10 +76,17 @@ body {
 /*gradients*/
 .gradient {
   background: cornsilk; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(DarkOrange, orange, khaki, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(DarkOrange, orange, khaki, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(DarkOrange, orange, khaki, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(DarkOrange, orange, khaki, white); /* Standard syntax */
+    background: -webkit-linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(firebrick, DarkOrange, orange, khaki, white, aquamarine); /* Standard syntax */
+}
+.gradient2 {
+  background: cornsilk; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(firebrick, DarkOrange, orange, khaki); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(firebrick, DarkOrange, orange, khaki); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(firebrick, DarkOrange, orange, khaki); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(firebrick, DarkOrange, orange, khaki); /* Standard syntax */
 }
 
 /*Media Queries**********************/
