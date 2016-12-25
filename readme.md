@@ -1,4 +1,4 @@
-# :roller_coaster::video_camera: Lottavid
+# :fire::ear_of_rice::snowflake::video_camera: Lottavid
 ## _JQuery plugin 'covervid' demo_
 
 ### By _Alexander Jacks_

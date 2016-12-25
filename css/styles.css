@@ -23,7 +23,7 @@ video {
   text-align: center; }
 
 body {
-  font-family: 'Luminari'; }
+  font-family: 'Luminari', cursive, fantasy, serif; }
   body div {
     background-color: DarkOrange;
     margin-left: 1vw; }
